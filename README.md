@@ -1,11 +1,11 @@
 # LightningDOT
-source code and pre-trained checkpoint for NAACL 2021 paper LightningDOT 
+source code and pre-trained checkpoint for NAACL 2021 paper ["LightningDOT: Pre-training Visual-Semantic Embeddings for Real-Time Image-Text Retrieval"](https://arxiv.org/abs/2103.08784).
 
-## UNITER Environment
+### UNITER Environment
 To run UNITER for re-ranker, please set a seperate environment based on [this repo](https://github.com/ChenRocks/UNITER). 
 
 All pre-training and fine-tuning are using a conda environment that can be used as below
-# Environment
+## Environment
 
 Under the project folder, first run (depends on your CUDA version)
 ```bash
@@ -134,13 +134,15 @@ This project has adopted the Microsoft Open Source Code of Conduct. For more inf
 
 ## Citation
 If you find this code useful for your research, please consider citing:
-
-    @article{sun2021lightningdot,
+```bibtex
+    @inproceedings{sun2021lightningdot,
     title={LightningDOT: Pre-training Visual-Semantic Embeddings for Real-Time Image-Text Retrieval},
     author={Sun, Siqi and Chen, Yen-Chun and Li, Linjie and Wang, Shuohang and Fang, Yuwei and Liu, Jingjing},
-    journal={arXiv preprint arXiv:2103.08784},
+    booktitle={NAACL-HLT},
     year={2021}
     } 
-   
+```
 
-Paper is available at [here](https://arxiv.org/abs/2103.08784).  
+## License
+
+MIT
