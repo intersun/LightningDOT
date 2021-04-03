@@ -19,7 +19,7 @@ function run_exp {
 
   current_output_dir="${output_dir}/${LR}_${BS}_${NUM_HARD}_${SAMPLEING_METHOD}_${CAPTION_SCORE_WEIGHT}_${PROJECT_DIM}_${RETRIEVAL_MODE}_run${SURFIX}"
   mkdir -p $current_output_dir
-  cmd="CUDA_VISIBLE_DEVICES=${GPU_ID} python train_itm.py --config ./config/flickr30k_ft_config_bert.json \
+  cmd="CUDA_VISIBLE_DEVICES=${GPU_ID} python train_itm.py --config ./config/flickr30k_ft_config.json \
   --learning_rate $LR --train_batch_size $BS --output_dir $current_output_dir --fp16 \
   --num_hard_negatives $NUM_HARD --project_name $PROJECT_NAME --caption_score_weight $CAPTION_SCORE_WEIGHT  \
   --hard_negatives_sampling $SAMPLEING_METHOD --fp16_opt_level O2 --project_dim $PROJECT_DIM  \
@@ -36,9 +36,9 @@ function run_exp {
 
 
 echo "**********************************************************************"
-IMG_CKPT=/pretrain/alltask_ot_alldata.pt
+IMG_CKPT=./data/model/uniter-base.pt
 TXT_CKPT=none
-BIMODEL_CKPT=/pretrain/LightningDot.pt
+BIMODEL_CKPT=./data/model/LightningDot.pt
 LR=2e-5
 BSZ=96
 PROJECT_NAME=itm_flickr

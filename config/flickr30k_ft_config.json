@@ -3,8 +3,8 @@
     "txt_model_config": "bert-base-cased",
     "img_model_type": "uniter-base",
     "img_model_config": "./config/img_base.json",
-    "img_checkpoint": "/pretrain/alltask_ot_alldata.pt",
-    "itm_global_file":"/db/meta/flicker_meta.json",
+    "img_checkpoint": "./data/model/uniter-base.pt",
+    "itm_global_file":"./data/meta/flickr_meta.json",
     "train_batch_size": 64,
     "gradient_accumulation_steps": 1,
     "learning_rate": 2e-05,
@@ -20,19 +20,19 @@
     "num_bb": 36,
     "project_dim": 768,
     "train_txt_dbs": [
-        "/db/itm_flickr30k_train_base-cased.db"
+        "./data/db/itm_flickr30k_train_base-cased.db"
     ],
     "train_img_dbs": [
-        "/img/flickr30k/"
+        "./data/img/flickr30k/"
     ],
-    "val_txt_db": "/db/itm_flickr30k_val_base-cased.db",
-    "val_img_db": "/img/flickr30k/",
-    "test_txt_db": "/db/itm_flickr30k_test_base-cased.db",
-    "test_img_db": "/img/flickr30k/",
+    "val_txt_db": "./data/db/itm_flickr30k_val_base-cased.db",
+    "val_img_db": "./data/img/flickr30k/",
+    "test_txt_db": "./data/db/itm_flickr30k_test_base-cased.db",
+    "test_img_db": "./data/img/flickr30k/",
     "project_name": "itm-debug",
     "num_hard_negatives": 0,
     "hard_negatives_sampling": "none",
     "inf_minibatch_size": 0,
-    "n_workers": 3,
+    "n_workers": 0,
     "fp16": true
 }

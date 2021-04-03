@@ -5,7 +5,7 @@
     "img_model_type": "uniter-base",
     "img_model_config": "./config/img_base.json",
     "model_config": "./config/img_base.json",
-    "img_checkpoint": "/pretrain/alltask_ot_alldata.pt",
+    "img_checkpoint": "./data/mode/uniter-base.pt",
     "output_dir": "/storage/pretrain/alltask_ot_alldata_base",
     "project_dim": 768,
     "mrm_prob": 0.15,
@@ -42,12 +42,12 @@
         {
             "name": "coco_cap",
             "db": [
-                "/db/pretrain_caption_coco_train_base-cased.db/",
-                "/db/pretrain_caption_coco_trainval_base-cased.db/"
+                "./data/db/pretrain_caption_coco_train_base-cased.db/",
+                "./data/db/pretrain_caption_coco_trainval_base-cased.db/"
             ],
             "img": [
-                "/img/coco_train2014/",
-                "/img/coco_val2014/"
+                "./data/img/coco_train2014/",
+                "./data/img/coco_val2014/"
             ],
             "tasks": [
                 "itm",
@@ -65,10 +65,10 @@
         {
             "name": "vg_cap",
             "db": [
-                "/db/pretrain_caption_vg_train_base-cased.db/"
+                "./data/db/pretrain_caption_vg_train_base-cased.db/"
             ],
             "img": [
-                "/img/vg/"
+                "./data/img/vg/"
             ],
             "tasks": [
                 "itm",
@@ -86,10 +86,10 @@
         {
             "name": "cc",
             "db": [
-                "/db/conceptual_caption_train_base-cased.db/"
+                "./data/db/conceptual_caption_train_base-cased.db/"
             ],
             "img": [
-                "/img/gcc_train/"
+                "./data/img/gcc_train/"
             ],
             "tasks": [
                 "itm",
@@ -107,10 +107,10 @@
         {
             "name": "sbu",
             "db": [
-                "/db/sbu_caption_train_base-cased.db/"
+                "./data/db/sbu_caption_train_base-cased.db/"
             ],
             "img": [
-                "/img/sbu/"
+                "./data/img/sbu/"
             ],
             "tasks": [
                 "itm",
@@ -130,10 +130,10 @@
         {
             "name": "coco_cap",
             "db": [
-                "/db/pretrain_caption_coco_val_base-cased.db/"
+                "./data/db/pretrain_caption_coco_val_base-cased.db/"
             ],
             "img": [
-                "/img/coco_val2014/"
+                "./data/img/coco_val2014/"
             ],
             "tasks": [
                 "itm",
@@ -145,10 +145,10 @@
         {
             "name": "vg_cap",
             "db": [
-                "/db/pretrain_caption_vg_val_base-cased.db/"
+                "./data/db/pretrain_caption_vg_val_base-cased.db/"
             ],
             "img": [
-                "/img/vg/"
+                "./data/img/vg/"
             ],
             "tasks": [
                 "itm",
@@ -160,10 +160,10 @@
         {
             "name": "cc",
             "db": [
-                "/db/conceptual_caption_val_base-cased.db/"
+                "./data/db/conceptual_caption_val_base-cased.db/"
             ],
             "img": [
-                "/img/gcc_val/"
+                "./data/img/gcc_val/"
             ],
             "tasks": [
                 "itm",
@@ -175,10 +175,10 @@
         {
             "name": "sbu",
             "db": [
-                "/db/sbu_caption_val_base-cased.db/"
+                "./data/db/sbu_caption_val_base-cased.db/"
             ],
             "img": [
-                "/img/sbu/"
+                "./data/img/sbu/"
             ],
             "tasks": [
                 "itm",

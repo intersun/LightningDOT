@@ -3,8 +3,8 @@
     "txt_model_config": "bert-base-cased",
     "img_model_type": "uniter-base",
     "img_model_config": "./config/img_base.json",
-    "img_checkpoint": "/pretrain/alltask_ot_alldata.pt",
-    "itm_global_file":"/db/meta/coco_meta.json",
+    "img_checkpoint": "./data/model/uniter-base.pt",
+    "itm_global_file":"./data/meta/coco_meta.json",
     "train_batch_size": 64,
     "val_batch_size": 256,
     "gradient_accumulation_steps": 1,
@@ -21,22 +21,22 @@
     "num_bb": 36,
     "project_dim": 768,
     "train_txt_dbs": [
-        "/db/itm_coco_train_base-cased.db",
-        "/db/itm_coco_restval_base-cased.db"
+        "./data/db/itm_coco_train_base-cased.db",
+        "./data/db/itm_coco_restval_base-cased.db"
     ],
     "train_img_dbs": [
-        "/img/coco_train2014/",
-        "/img/coco_val2014"
+        "./data/img/coco_train2014/",
+        "./data/img/coco_val2014"
     ],
-    "val_txt_db": "/db/itm_coco_val_base-cased.db",
-    "val_img_db": "/img/coco_val2014/",
-    "test_txt_db": "/db/itm_coco_test_base-cased.db",
-    "test_img_db": "/img/coco_val2014/",
+    "val_txt_db": "./data/db/itm_coco_val_base-cased.db",
+    "val_img_db": "./data/img/coco_val2014/",
+    "test_txt_db": "./data/db/itm_coco_test_base-cased.db",
+    "test_img_db": "./data/img/coco_val2014/",
     "project_name": "itm-debug",
     "num_hard_negatives": 0,
     "hard_negatives_sampling": "none",
     "inf_minibatch_size": 0,
-    "n_workers": 3,
+    "n_workers": 0,
     "fp16": true,
     "compressed_db": false,
     "pin_mem": true

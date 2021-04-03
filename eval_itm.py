@@ -170,13 +170,13 @@ def EVAL_MODEL(config_file, bi_encoder_checkpoint, project_name='itm-eval-dev'):
 
 
 # Zero-shot evaluation for LightningDot on Flickr30k
-# EVAL_MODEL('./config/flickr30k_eval_config.json', '/pretrain/LightningDot.pt')
+# EVAL_MODEL('./config/flickr30k_eval_config.json', './data/model/LightningDot.pt')
 
-# Fine-tune on Flickr30k, evaluating on Flickr30k
-# EVAL_MODEL('./config/flickr30k_eval_config.json', '/good_models/flickr_two-stream-add/biencoder.last.pt')
+# Fine-tune on Flickr30k, evaluate on Flickr30k
+# EVAL_MODEL('./config/flickr30k_eval_config.json', './data/model/flickr-ft.pt')
 
-# Fine-tune on Flickr30k, evaluating on Flickr30k
-# EVAL_MODEL('./config/coco_eval_config.json', '/good_models/coco_two-stream-add/biencoder.last.pt')
+# Fine-tune on COCO, evaluate on COCO
+# EVAL_MODEL('./config/coco_eval_config.json', './data/model/coco-ft.pt')
 
 EVAL_MODEL(sys.argv[1], sys.argv[2])
 

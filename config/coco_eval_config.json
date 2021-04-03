@@ -1,7 +1,7 @@
 {
     "txt_model_config": "bert-base-cased",
     "img_model_config": "./config/img_base.json",
-    "itm_global_file":"/db/meta/coco_meta.json",
+    "itm_global_file":"./data/meta/coco_meta.json",
     "seed": 42,
     "output_dir": "/storage/debug-eval",
     "max_txt_len": 60,
@@ -10,8 +10,8 @@
     "min_bb": 10,
     "num_bb": 36,
     "project_dim": 768,
-    "test_txt_db": "/db/itm_coco_test_base-cased.db",
-    "test_img_db": "/img/coco_val2014/",
+    "test_txt_db": "./data/db/itm_coco_test_base-cased.db",
+    "test_img_db": "./data/img/coco_val2014/",
     "project_name": "itm-debug",
     "n_workers": 4,
     "fp16": true
