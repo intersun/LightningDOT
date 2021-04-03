@@ -1,0 +1,42 @@
+{
+    "train_datasets": [
+        {"name": "gqa",
+         "db": ["/db/pretrain_gqa_train_0_large-cased.db", "/db/pretrain_gqa_train_1_base-cased.db",
+                "/db/pretrain_gqa_train_2_base-cased.db", "/db/pretrain_gqa_train_3_base-cased.db",
+                "/db/pretrain_gqa_train_4_base-cased.db", "/db/pretrain_gqa_train_5_base-cased.db",
+                "/db/pretrain_gqa_train_6_base-cased.db", "/db/pretrain_gqa_train_7_base-cased.db",
+                "/db/pretrain_gqa_train_8_base-cased.db", "/db/pretrain_gqa_train_9_base-cased.db",
+                "/db/pretrain_gqa_val_base-cased.db"],
+         "img": ["/img/gqa/"],
+         "tasks": ["mlm", "mrm", "mrckl"],
+         "mix_ratio": [2, 1, 1]}
+    ],
+    "val_datasets": [
+        {"name": "gqa",
+         "db": ["/db/pretrain_gqa_testdev_balanced_base-cased.db"],
+         "img": ["/img/gqa/"],
+         "tasks": ["mlm", "mrm", "mrckl"]}
+    ],
+    "checkpoint": "/pretrain/bert-large_weak_alldata/ckpt/model_step_100000.pt",
+    "output_dir": "/storage/pretrain_gqa/bert_large_weak_alldata_100k-train_val_all-mlm_mrm_mrckl-train_batch_size_6144-500k_steps",
+    "mrm_prob": 0.15,
+    "max_txt_len": 220,
+    "conf_th": 0.2,
+    "max_bb": 100,
+    "min_bb": 10,
+    "num_bb": 36,
+    "train_batch_size": 6144,
+    "val_batch_size": 8000,
+    "gradient_accumulation_steps": 10,
+    "learning_rate": 3e-05,
+    "valid_steps": 10000,
+    "num_train_steps": 500000,
+    "optim": "adamw",
+    "decay": "linear",
+    "dropout": 0.1,
+    "weight_decay": 0.01,
+    "grad_norm": -1,
+    "warmup_steps": 50000,
+    "seed": 42,
+    "fp16": true
+}

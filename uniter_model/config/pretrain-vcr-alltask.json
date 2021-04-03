@@ -1,0 +1,38 @@
+{
+    "train_datasets": [
+        {"name": "vcr",
+         "db": ["/db/vcr_val_w_obj_ids_base-cased.db/"],
+         "img": ["/img/vcr_val/;/img/vcr_gt_val/"],
+         "tasks": ["mlm", "mrm", "mrckl"],
+         "mix_ratio": [2, 1, 1]}
+    ],
+    "val_datasets": [
+        {"name": "vcr",
+         "db": ["/db/vcr_val_w_obj_ids_base-cased.db/"],
+         "img": ["/img/vcr_val/;/img/vcr_gt_val/"],
+         "tasks": ["mlm", "mrm", "mrckl"]}
+    ],
+    "checkpoint": "/pretrain/bert-base_weak_w_mlm_itm_mrm_mrckl_4gpu/ckpt/model_step_500000.pt",
+    "vcr_task": ["qa", "qar"],
+    "output_dir": "/storage/debug/mlm_mrm_mrckl-qa_qar-gt_det",
+    "mrm_prob": 0.15,
+    "max_txt_len": 60,
+    "conf_th": 0.2,
+    "max_bb": 100,
+    "min_bb": 10,
+    "num_bb": 36,
+    "train_batch_size": 8000,
+    "val_batch_size": 8000,
+    "gradient_accumulation_steps": 5,
+    "learning_rate": 3e-05,
+    "valid_steps": 10,
+    "num_train_steps": 120000,
+    "optim": "adamw",
+    "decay": "linear",
+    "dropout": 0.1,
+    "weight_decay": 0.01,
+    "grad_norm": -1,
+    "warmup_steps": 12000,
+    "seed": 42,
+    "fp16": true
+}

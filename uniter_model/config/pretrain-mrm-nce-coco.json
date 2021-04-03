@@ -1,0 +1,43 @@
+{
+    "train_datasets": [
+        {"name": "coco_cap",
+         "db": ["/db/pretrain_caption_coco_train_base-cased.db/",
+                "/db/pretrain_caption_coco_trainval_base-cased.db/"],
+         "img": ["/img/coco_train2014/", "/img/coco_val2014/"],
+         "tasks": ["mrm-nce"],
+         "mix_ratio": [1]}
+    ],
+    "val_datasets": [
+        {"name": "coco_cap",
+         "db": ["/db/pretrain_caption_coco_val_base-cased.db/"],
+         "img": ["/img/coco_val2014/"],
+         "tasks": ["mrm-nce"]}
+    ],
+    "output_dir": "/storage/pretrain/mrm_nce_coco",
+    "mrm_prob": 0.15,
+    "neg_size": 1024,
+    "nce_temp": 1.0,
+    "itm_neg_prob": 0.5,
+    "max_txt_len": 60,
+    "conf_th": 0.2,
+    "max_bb": 100,
+    "min_bb": 10,
+    "num_bb": 36,
+    "train_batch_size": 8192,
+    "val_batch_size": 8192,
+    "gradient_accumulation_steps": 2,
+    "learning_rate": 5e-05,
+    "valid_steps": 5000,
+    "num_train_steps": 100000,
+    "optim": "adamw",
+    "decay": "linear",
+    "dropout": 0.1,
+    "weight_decay": 0.01,
+    "grad_norm": 2.0,
+    "warmup_steps": 10000,
+    "seed": 42,
+    "fp16": true,
+    "pin_mem": true,
+    "n_workers": 4,
+    "from_scratch": false
+}

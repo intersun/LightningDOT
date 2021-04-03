@@ -1,0 +1,26 @@
+{
+    "txt_model_config": "bert-base-cased",
+    "img_model_config": "./config/img_base.json",
+    "itm_global_file":"/db/meta/flicker_meta.json",
+    "seed": 42,
+    "output_dir": "/storage/debug-eval",
+    "max_txt_len": 60,
+    "conf_th": 0.2,
+    "max_bb": 100,
+    "min_bb": 10,
+    "num_bb": 36,
+    "project_dim": 768,
+    "train_txt_dbs": [
+        "/db/itm_flickr30k_train_base-cased.db"
+    ],
+    "train_img_dbs": [
+        "/img/flickr30k/"
+    ],
+    "val_txt_db": "/db/itm_flickr30k_val_base-cased.db",
+    "val_img_db": "/img/flickr30k/",
+    "test_txt_db": "/db/itm_flickr30k_test_base-cased.db",
+    "test_img_db": "/img/flickr30k/",
+    "project_name": "itm-debug",
+    "n_workers": 4,
+    "fp16": true
+}

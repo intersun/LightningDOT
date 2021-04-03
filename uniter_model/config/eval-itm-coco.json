@@ -1,0 +1,11 @@
+{
+    "txt_db": "/db/itm_coco_test_1k_4_base-cased.db/", 
+    "img_dir": "/img/coco_val2014/",
+    "neg_sample_size": -1,
+    "eval_split": "itm_coco_test_1k_4_fp16",
+    "checkpoint": 12000,
+    "cut_bert": -1,
+    "output_dir": "/storage/itm/coco-bert_base-weak_420k-w_train-lr_2e-5-20k_steps-rank_loss-batch_size_20_acc_8_wd_0/",
+    "fp16": true,
+    "eval_mini_batch_size": 400
+}

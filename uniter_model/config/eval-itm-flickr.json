@@ -1,0 +1,11 @@
+{
+    "txt_db": "/db/itm_flickr30k_train_base-cased.db/", 
+    "img_dir": "/img/flickr30k/",
+    "neg_sample_size": -1,
+    "eval_split": "itm_flickr_train",
+    "checkpoint": 6000,
+    "cut_bert": -1,
+    "output_dir": "/storage/itm/flickr30k-bert_base_weak_420k-hard_neg_finetune-lr_5e-5-train_step_5k",
+    "fp16": true,
+    "eval_mini_batch_size": 128
+}
