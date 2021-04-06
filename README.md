@@ -17,9 +17,9 @@ If you find the code useful for your research, please consider citing:
 
 
 ### UNITER Environment
-To run UNITER for re-ranker, please set a seperate environment based on [this repo](https://github.com/ChenRocks/UNITER). 
+To run UNITER for re-ranking, please set a seperate environment based on [this repo](https://github.com/ChenRocks/UNITER). 
 
-All pre-training and fine-tuning are using a conda environment that can be created as follows.
+The rest of code is using a conda environment that can be created as follows.
 ## Environment
 
 Under the project home folder, first run (depends on **your CUDA version**)
@@ -92,9 +92,9 @@ The checkpoints for UNITER-base and BERT-base can be obtaind from [UNITER-base](
 
 
 ## Fine-tuning on MSCOCO and Flickr30k
-We provide an sample bash script at **./bash/train_flickr.sh**, which we used to search for learning rate.
+We provide a sample bash script at **./bash/train_flickr.sh**, which we used to search for learning rate.
 
-Two checkpoints that have been already fine-tuned on MSCOCO and Flickr30k are also provided at [COCO-FT](https://convaisharables.blob.core.windows.net/lightningdot/coco-ft.pt) and [Flickr-FT](https://convaisharables.blob.core.windows.net/lightningdot/flickr-ft.pt).
+Two checkpoints (fine-tuned on MSCOCO and Flickr30k) are also provided at [COCO-FT](https://convaisharables.blob.core.windows.net/lightningdot/coco-ft.pt) and [Flickr-FT](https://convaisharables.blob.core.windows.net/lightningdot/flickr-ft.pt).
 
 
 ## Evaluation
@@ -102,8 +102,8 @@ Run
 ```bash
 python eval_itm.py  your_eval_config.json  your_checkpoint.pt 
 ```
-to run the evaluation.
-We provide three examples that could be obtained solely based on checkpoints and configurations provided in this repo.
+to run the evaluation script.
+We provide three examples that could be obtained solely based on checkpoints and configurations in this repo.
 
 Note that your results may NOT be exactly the same with results below due to different machine/environment configurations (but they should be close enough).
 
