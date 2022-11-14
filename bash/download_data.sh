@@ -10,14 +10,14 @@ mkdir data/meta
 
 cd data/model/
 # download all pre-trained model checkpoints
-wget -nc https://convaisharables.blob.core.windows.net/lightningdot/LightningDot.pt
-wget -nc https://convaisharables.blob.core.windows.net/lightningdot/bert-base-cased.pt
-wget -nc https://convaisharables.blob.core.windows.net/lightningdot/uniter-base.pt
-wget -nc https://convaisharables.blob.core.windows.net/lightningdot/coco-ft.pt
-wget -nc https://convaisharables.blob.core.windows.net/lightningdot/flickr-ft.pt
+wget -nc https://acvrpublicycchen.blob.core.windows.net/lightningdot/LightningDot.pt
+wget -nc https://acvrpublicycchen.blob.core.windows.net/lightningdot/bert-base-cased.pt
+wget -nc https://acvrpublicycchen.blob.core.windows.net/lightningdot/uniter-base.pt
+wget -nc https://acvrpublicycchen.blob.core.windows.net/lightningdot/coco-ft.pt
+wget -nc https://acvrpublicycchen.blob.core.windows.net/lightningdot/flickr-ft.pt
 
 cd ../meta/
 # download meta files for both coco and flickr
-wget -nc https://convaisharables.blob.core.windows.net/lightningdot/coco_meta.json
-wget -nc https://convaisharables.blob.core.windows.net/lightningdot/flickr_meta.json
+wget -nc https://acvrpublicycchen.blob.core.windows.net/lightningdot/coco_meta.json
+wget -nc https://acvrpublicycchen.blob.core.windows.net/lightningdot/flickr_meta.json
 
